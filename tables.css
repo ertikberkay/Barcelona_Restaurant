@@ -1,0 +1,59 @@
+/*
+Berkay Ertik
+05/05/2023
+
+Table Style Sheet
+*/
+table.schedule {
+    background: white;
+    border: 10px outset #BFCCB5;
+    border-collapse: collapse;
+    font-size: 1.0em;
+    width: 70%;
+}
+
+
+/*//////////////   Table Cell Styles   //////////*/
+
+table.schedule th, table.schedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+/*//////////////   Table Caption Styles  //////////////*/
+
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+}
+
+
+/*//////////////   Row Group Styles   //////////////*/
+
+table.schedule #days {
+    background: #BFCCB5;
+    color: white;
+}
+
+table.schedule thead tr {
+    height: 30px;
+}
+
+table.schedule tbody tr {
+    height: 40px;
+}
+
+
+/*//////////////    Column Group Styles    //////////////*/
+
+col#firstCol {
+    background: beige;
+    width: 15%;
+}
+
+col.dayCols {
+    width: 12%;
+}

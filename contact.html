@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona Restaurant</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet" >
+</head>
+<body class="form-page">
+<header>
+    <h1>Barcelona Restaurant & Wine Bar</h1>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="barcelona.html">Home</a></li>
+            <li><a href="menu.html">Dinner Menu</a></li>
+            <li><a href="bar.html">Bar Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+
+  <p>We require reservations to offer our guests a better service. Please submit your reservation below.</p>
+    <form>
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name"  placeholder="Berkay Ertik" pattern=[A-Z\sa-z] required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" placeholder="berkay.ertik@example.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="phone">Your Phone Number</label>
+          <input type="tel" id="phone"  placeholder="518-123-4567" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="people">Number of People</label>
+          <input type="number" id="people"  placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="rez-date">Select Date</label>
+          <input type="date" id="rez-date"  required>
+        </div>
+        <div class="elem-groupinlined">
+          <label for="rez-time">Select Time</label>
+          <input type="time" id="rez-time"  min="04:00" max="09:00"  required>
+          <small>We only take reservations for dinner hours between 4:00 PM to 9:00 PM</small>
+        </div>
+        <div class="elem-group">
+          <label for="table-selection">Select Table Preference</label>
+          <select id="table-selection"  required>
+              <option value="">Choose a Table from the List</option>
+              <option value="bar">Bar</option>
+              <option value="high-top">High Top</option>
+              <option value="table">Table</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Additional Message</label>
+          <textarea id="message" placeholder="Tell us your occasion." required></textarea>
+        </div>
+        <button type="submit">Book Your Table</button>
+      </form>
+    <footer>1192 Western Avenue, Albany, NY 12203</footer>    
+</body>
+</html>

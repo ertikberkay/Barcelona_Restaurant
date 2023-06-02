@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is the home page of the website which contains a table for hours of operation and 
+    a welcome paragraph -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona Restaurant</title>
+    <link rel="icon" href="favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet" >
+    <link href="tables.css" rel="stylesheet" >
+</head>
+<body> 
+    <header>
+    <h1>Barcelona Restaurant & Wine Bar</h1>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="barcelona.html">Home</a></li>
+            <li><a href="menu.html">Dinner Menu</a></li>
+            <li><a href="bar.html">Bar Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="about">
+    <article>
+        <h2>Welcome to Barcelona</h2>
+        <p>Together, Chef Paul Perez and Minerva Martinez, strive to keep Barcelona
+            one of Albany’s finest establishments. With a menu of only the highest
+            quality, including the sustainable seafood dishes, finest cuts of meat,
+            distinguished bar selections, and a wine list composed of classic bottles and
+            delectable wines by the glass, Barcelona lives up to its reputation.
+        </p>
+    </article>
+</div>
+<div id="pics">
+    <img class="home" src="barcelona.png" alt="barcelona">
+    <img class="home" src="bar.png" alt="bar">
+    <img class="home" src="sign.png" alt="sign">
+</div>
+<section id="main">
+    <h2>Hours of Operation</h2>
+    <p>Barcelona Restaurant & Wine Bar currently serves lunch and dinner. Please see our schedule below.</p>
+    <table class="schedule">
+        <caption>Hours of Operation</caption>
+        <colgroup>
+            <col id="firstCol" >
+            <col class="daysCol" span="7">
+        </colgroup>
+        <tr id="days">
+            <th>Time</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tbody>
+            <tr>
+                <th>11:00 AM</th>
+                <td rowspan="5">Closed</td>
+                <td rowspan="3">Lunch</td>
+                <td rowspan="3">Lunch</td>
+                <td rowspan="3">Lunch</td>
+                <td rowspan="3">Lunch</td>
+                <td rowspan="5">Closed</td>
+                <td rowspan="5">Closed</td>
+            </tr>
+            <tr>
+                <th>12:00 PM</th>
+            </tr>
+            <tr>
+                <th>1:00 PM</th>
+            </tr>
+            <tr>
+                <th>2:00 PM</th>
+                <td rowspan="2" colspan="4">Closed</td>
+            </tr>
+            <tr>
+                <th>3:00 PM</th>
+            </tr>
+            <tr>
+                <th>4:00 PM</th>
+                <td rowspan="6" colspan="7">Dinner</td>
+            </tr>
+            <tr>
+                <th>5:00 PM</th>
+            </tr>
+            <tr>
+                <th>6:00 PM</th>
+            </tr>
+            <tr>
+                <th>7:00 PM</th>
+            </tr>
+            <tr>
+                <th>8:00 PM</th>
+            </tr>
+            <tr>
+                <th>9:00 PM</th>
+            </tr>
+        </tbody> 
+    </table>
+</section>
+<footer>1192 Western Avenue, Albany, NY 12203</footer>
+</body>
+</html>
